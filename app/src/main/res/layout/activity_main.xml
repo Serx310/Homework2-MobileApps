@@ -22,8 +22,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="56dp"
         android:ems="10"
-        android:inputType="numberDecimal"
         android:hint="Enter temperature"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -32,23 +33,36 @@
 
     <Button
         android:id="@+id/cToF"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
+        android:layout_width="256dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="80dp"
         android:text="Celsius to Fahrenheit"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/enterTemp" />
 
     <Button
         android:id="@+id/fToC"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
-        android:text="Button"
+        android:layout_width="259dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="96dp"
+        android:text="Fahrenheit to Celsius"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.506"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cToF" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="128dp"
+        android:layout_height="59dp"
+        android:text="0 Degree"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fToC" />
 </androidx.constraintlayout.widget.ConstraintLayout>
